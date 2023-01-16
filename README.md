@@ -1,0 +1,3 @@
+# Turtle-project
+Turtle project for my computer science class
+this code will draw a flag of your choice from either belgium, france, ireland, italy, poland, germany
