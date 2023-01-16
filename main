@@ -1,0 +1,92 @@
+#plan:
+#countries: belgium, france, ireland, italy, poland, germany
+#shapes: rectangle
+
+### Shapes ###
+from turtle import *
+#rectangle
+def rectangle(width, height, colour, fill):
+    color(colour)
+    if fill is True:
+        begin_fill()
+    for i in range(2):
+        forward(width)
+        left(90)
+        forward(height)
+        left(90)
+    end_fill()
+
+### move ###
+def move(x, y, pen_up):
+    if pen_up is True:
+        penup()
+    goto(x, y)
+    pendown()
+
+#belgium flag
+def belgium_flag():
+    rectangle(50, 100, "black", True)
+    move((xcor() + 50), ycor(), True)
+    rectangle(50, 100, "gold", True)
+    move((xcor() + 50), ycor(), True)
+    rectangle(50, 100, "red", True)
+#france_flag
+def france_flag():
+     rectangle(50, 100, "blue", True)
+     move((xcor() + 50), ycor(), True)
+     rectangle(50, 100, "ghost white", True)
+     move((xcor() + 50), ycor(), True)
+     rectangle(50, 100, "red", True)
+#ireland flag
+def ireland_flag():
+    rectangle(50, 100, "forest green", True)
+    move((xcor() + 50), ycor(), True)
+    rectangle(50, 100, "ghost white", True)
+    move((xcor() + 50), ycor(), True)
+    rectangle(50, 100, "dark orange", True)
+#italy flag
+def italy_flag():
+    rectangle(50, 100, "forest green", True)
+    move((xcor() + 50), ycor(), True)
+    rectangle(50, 100, "ghost white", True)
+    move((xcor() + 50), ycor(), True)
+    rectangle(50, 100, "red", True)
+def poland_flag():
+    rectangle(100, 50, "ghost white", True)
+    move(xcor(), ycor() + 50, True)
+    rectangle(100, 50, "red", True)
+def german_flag():
+    rectangle(150, 100, "yellow", True)
+    move(xcor(), ycor() + 50, True)
+    rectangle(150, 100, "red", True)
+    move(xcor(), ycor() + 50, True)
+    rectangle(150, 100, "black", True)
+hideturtle()
+exitonclick()
+#question
+country = input("In which of these countries would you like to be drawn? options are: belgium, france, ireland, italy, poland, germany. Please write in lower caps. Type stop to exsit")
+if country== 'belgium':
+    belgium_flag()
+if country== 'france':
+    france_flag()
+if country== 'ireland' :
+    ireland_flag()
+if country== 'italy':
+    italy_flag()
+if country== 'poland':
+    poland_flag()
+if country== 'germany':
+    german_flag()
+
+countries = ['belgium', 'france','ireland', 'italy', 'poland', 'germany']
+
+while country not in countries:
+    if country == 'stop':
+        break
+    print('read the instructions and try again')
+    country = input("In which of these countries would you like to be drawn? options are: belgium, france, ireland, italy, poland, germany. Please write in lower caps")
+    
+
+
+
+
