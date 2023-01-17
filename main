@@ -1,6 +1,10 @@
 #plan:
 #countries: belgium, france, ireland, italy, poland, germany
 #shapes: rectangle
+#due date: Jan 10th 2023
+#class: comp sci
+#date of submission: Jan 10th 2023
+
 
 ### Shapes ###
 from turtle import *
