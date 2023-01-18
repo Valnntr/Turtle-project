@@ -56,9 +56,9 @@ def italy_flag():
     move((xcor() + 50), ycor(), True)
     rectangle(50, 100, "red", True)
 def poland_flag():
-    rectangle(100, 50, "ghost white", True)
-    move(xcor(), ycor() + 50, True)
     rectangle(100, 50, "red", True)
+    move(xcor(), ycor() + 50, True)
+    rectangle(100, 50, "ghost white", True)
 def german_flag():
     rectangle(150, 100, "yellow", True)
     move(xcor(), ycor() + 50, True)
